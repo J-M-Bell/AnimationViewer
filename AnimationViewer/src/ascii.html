@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASCIImation</title>
+
+        <link href="ascii.css" type="text/css" rel="stylesheet" />
+        <script src="ascii.js" type="text/javascript"></script>
+        <script src="animations.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>ASCII Animation Viewer</h1>
+        <div class="container">
+            <textarea id="textarea" cols="80" rows="20"></textarea>
+            <div class="controls">
+                <fieldset>
+                    <legend>Play Controls:</legend>
+                    <button id="startButton" onclick="startButtonClicked()">Start</button>
+                    <button id="stopButton" onclick="stopButtonClicked()" disabled>Stop</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Animation:</legend>
+                    <select id="animationSelect" onchange="animationSelectChanged()">
+                        <option value="blank" selected>Blank</option>
+                        <option value="exercise">Exercise</option>
+                        <option value="juggler">Juggler</option>
+                        <option value="bike">Bike</option>
+                        <option value="dive">Dive</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <select id="fontSizeSelect" onchange="fontSizeSelectChanged()">
+                        <option value="7pt">Tiny</option>
+                        <option value="10pt">Small</option>
+                        <option value="12pt" selected>Medium</option>
+                        <option value="16pt">Large</option>
+                        <option value="24pt">Extra Large</option>
+                        <option value="32pt">XXL</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Speed:</legend>
+                    <label><strong><input id="turbo" type="checkbox" onchange="speedCheckboxClicked()"/>Turbo</strong></label>
+                </fieldset>
+            </div>
+        </div>
+    </body>
+</html>

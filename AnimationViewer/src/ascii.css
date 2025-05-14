@@ -1,0 +1,52 @@
+html { /* set background color and default font for page*/
+    background-color: #CCCCFF;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+h1 { /* align and set font for heading*/
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container { /* center all content in container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+textarea { /* set dimensions and font for textarea*/
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.controls { /* center controls */
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: 5px solid black;
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 0; 
+}
+
+#animationSelect,
+#fontSizeSelect,
+#startButton,
+#stopButton { /* set font for dropdowns and buttons */
+    font-weight: bold; 
+    font-size: 12pt;
+}
